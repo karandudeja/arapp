@@ -27,7 +27,7 @@ struct ARViewContainer: UIViewRepresentable {
         let model = ModelEntity(mesh: mesh, materials: [material])
 
         // Create horizontal plane anchor for the content
-        let anchor = AnchorEntity(.plane(.vertical, classification: .any, minimumBounds: SIMD2<Float>(0.2, 0.2)))
+        let anchor = AnchorEntity(.plane(.horizontal, classification: .any, minimumBounds: SIMD2<Float>(0.2, 0.2)))
         anchor.children.append(model)
 
         // Add the horizontal plane anchor to the scene
